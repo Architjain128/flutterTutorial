@@ -16,8 +16,11 @@ class NavigationPage extends StatelessWidget {
                 Container(
                   child: ElevatedButton(
                     onPressed: () => Navigator.pushNamed(context, '/'),
-                    child: Text('Navigate using routes'),
-                    style: ElevatedButton.styleFrom(padding: EdgeInsets.all(20), textStyle: TextStyle(fontSize: 20)),
+                    child: const Text('Navigate using routes'),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.all(20),
+                      textStyle: const TextStyle(fontSize: 20),
+                    ),
                   ),
                 ),
                 SizedBox(height: 20),
@@ -27,8 +30,11 @@ class NavigationPage extends StatelessWidget {
                       context,
                       MaterialPageRoute(builder: (context) => HomePage()),
                     ),
-                    child: Text('Navigate using push method'),
-                    style: ElevatedButton.styleFrom(padding: EdgeInsets.all(20), textStyle: TextStyle(fontSize: 20)),
+                    child: const Text('Navigate using push method'),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.all(20),
+                      textStyle: const TextStyle(fontSize: 20),
+                    ),
                   ),
                 ),
               ],
