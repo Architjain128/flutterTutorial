@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
   //arrow function
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          title: const Text(HomePageTitle),
+          title: const Center(child: Text(HomePageTitle)),
         ),
         body: Container(
           width: MediaQuery.of(context).size.width,
