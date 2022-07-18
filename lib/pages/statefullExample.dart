@@ -49,7 +49,7 @@ class _StatefullPageState extends State<StatefullPage> {
                         setState(() {
                           _counter = _counter + 1;
                         });
-                        print('Counter actual value of stateless widget is: $_counter');
+                        print('Counter actual value of statefull widget is: $_counter');
                       },
                       child: Text('Increment'),
                       style: ElevatedButton.styleFrom(padding: EdgeInsets.all(20), textStyle: TextStyle(fontSize: 20)),
